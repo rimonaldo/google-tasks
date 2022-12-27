@@ -37,7 +37,7 @@ mongoose.connect(process.env.MONGO_URL)
 // app.get('/**', (req, res) => {
 //     res.sendFile(path.join(__dirname, 'public', 'index.html'))
 // })
-
+// rimon
 
 const port = process.env.PORT || 3030
 http.listen(port, () => {
