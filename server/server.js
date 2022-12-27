@@ -26,6 +26,13 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 // rimon's changes
+mongoose.connect(process.env.MONGO_URL)
+.then(() => console.log("DBconnection Successfull!"))
+.catch((err) =>{
+    console.log(err);
+});
+
+
 
 
 // app.get('/**', (req, res) => {
