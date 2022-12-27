@@ -28,9 +28,10 @@ export function HomePage() {
   const [tasks, setTasks] = useState([])
   useEffect(() => {
     const loadTasks = async () => {
-      const loadedTasks = await axios.get('')
-      if (!loadedTasks) setTasks(demoTasks)
-      else setTasks(loadedTasks)
+      setTasks(demoTasks)
+      // const loadedTasks = await axios.get('')
+      // if (!loadedTasks) setTasks(demoTasks)
+      // else setTasks(loadedTasks)
     }
 
     loadTasks()
@@ -38,7 +39,7 @@ export function HomePage() {
   return (
     <section className='home-page'>
       <h1>Google Task</h1>
-      <TaskList />
+      <TaskList tasks={tasks} />
     </section>
   )
 }
