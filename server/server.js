@@ -38,6 +38,8 @@ mongoose.connect(process.env.MONGO_URL)
 //     res.sendFile(path.join(__dirname, 'public', 'index.html'))
 // })
 // rimon
+//shimi
+// shimis
 
 const port = process.env.PORT || 3030
 http.listen(port, () => {
