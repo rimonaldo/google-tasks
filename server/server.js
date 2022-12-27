@@ -25,7 +25,7 @@ if (process.env.NODE_ENV === 'production') {
     app.use(cors(corsOptions))
 }
 
-
+// rimon's changes
 
 
 // app.get('/**', (req, res) => {
