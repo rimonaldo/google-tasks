@@ -1,4 +1,4 @@
-import { httpService } from './http-service.js'
+import { httpService } from './httpService.js'
 
 export const listService = {
   query,
