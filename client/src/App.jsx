@@ -1,13 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
+import './assets/scss/styles.scss'
+import { AppHeader } from './cmps/AppHeader';
+import { HomePage } from './pages/HomePage';
 
 function App() {
-  
+
 
   return (
     <div className="App">
-      
+      <AppHeader />
+      <HomePage />
+
     </div>
   )
 }
